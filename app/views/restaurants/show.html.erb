@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="card-restaurant-show">
+        <div class="card-restaurant">
+            <p id="notice"><%= notice %></p>
+
+            <p>
+            <strong>Name:</strong>
+            <%= @restaurant.name %>
+            </p>
+
+            <p>
+            <strong>Address:</strong>
+            <%= @restaurant.address %>
+            </p>
+
+            <p>
+            <strong>Description:</strong>
+            <%= @restaurant.description %>
+            </p>
+
+            <p>
+            <strong>Phone number:</strong>
+            <%= @restaurant.phone_number %>
+            </p>
+
+            <ul>
+            <% @restaurant.reviews.each do |review| %>
+            <li><strong>Review :</strong> <%= review.content %> <strong>Rating : </strong><%= review.rating %></li>
+            <% end %>
+            </ul>
+        </div>
+    </div>
+    <div class="card-footer-show">
+            <%= link_to '(+) Review', new_restaurant_review_path(@restaurant), {:class=>"btn btn-warning grey-btn"} %>
+
+            <%#= link_to 'Chef', chef_restaurant_path(@restaurant) %>
+            <%= link_to 'Review(s)', restaurant_reviews_path(@restaurant), {:class=>"btn btn-warning grey-btn"} %>
+            <%= link_to 'Edit', edit_restaurant_path(@restaurant), {:class=>"btn btn-warning grey-btn"} %>
+            <%= link_to 'Back', restaurants_path, {:class=>"btn btn-warning grey-btn"} %>
+    </div>
+</div>

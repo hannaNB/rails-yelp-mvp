@@ -1,0 +1,49 @@
+// Specific CSS for your home-page
+.container {
+    margin-top: 35px;
+    padding: 15px;
+}
+
+.card-restaurant-show {
+    background-size: cover;
+    background-position: center;
+    background-color: #CFD8DC;
+    margin-bottom: 5px;
+    padding: 15px;
+    height: auto;
+    display: block;
+    color: black;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.form-group {
+    width: 350px;
+}
+
+.grey-btn {
+    background-color: #78909C;
+    border-color: #78909C;
+}
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+}
+
+.banner h1 {
+margin: 0;
+color: white;
+text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+font-size: 32px;
+font-weight: bold;
+}
+
+.banner p {
+font-size: 20px;
+color: white;
+opacity: .7;
+text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}

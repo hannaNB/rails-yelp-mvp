@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Ajouter une review pour <%= @restaurant.name %></h1>
+
+    <!-- Si on met @review directement Rails POST sur la path restaurant-->
+    <!-- Pour aller sur la path imbriquer il faut utiliser la syntaxe suivante -->
+ 
+    <%= render 'form', review: [@restaurant, @review] %>
+
+</div>
